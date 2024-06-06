@@ -1,0 +1,127 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply flexbox to the body to ensure all components are centered */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white; /* Dark background for the entire page */
+    color: white; /* White text color for the entire page */
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+/* Style for the header */
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: white; /* Dark color for the header */
+    text-align: center;
+    margin-bottom: 20px; /* Margin to create space below the header */
+}
+
+/* Style for the main section */
+section {
+    width: 100%;
+    padding: 20px;
+    background-color: #695C85; /* Dark color for the section */
+    text-align: center;
+    color: white;
+    flex-grow: 1; /* Make the section grow to fill available space */
+    margin-bottom: 20px; /* Margin to create space below the section */
+}
+
+/* Style for the footer */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #333; /* Dark color for the footer */
+    text-align: center;
+    color: white;
+}
+
+.navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center align the nav-links */
+    margin-right: 250px;
+}
+
+.navbar-brand {
+    margin-right: auto; /* Keep the brand on the left */
+}
+
+#home {
+    background-color: white;
+    color: #222;
+    height: 18rem;
+    font-size: xx-large;
+
+}
+
+#home > h3 {
+    font-size: 50px;
+}
+
+#home > button {
+    margin: 20px;
+    border-radius: 0;
+}
+
+#home > a {
+    font-size: large;
+    margin: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center;
+    gap: 10px; /* Space between cards */
+}
+
+/* Style for individual cards */
+.card {
+    width: 400px;
+    height: 100px;
+    background-color: #555; /* Darker color for the cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Optional: Add some rounding to the corners */
+    color: white; /* Ensure text is white */
+}
+
+#address > a {
+    color: white;
+}
+
+.card-img {
+    filter: brightness(70%);
+}
+
+#services {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member > img {
+    height: 250px;
+    width: 200px;
+}
